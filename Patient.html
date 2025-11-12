@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Info</title>
+
+</head>
+<style>
+    h2 {
+        text-align: center;
+        color: blue;
+    }
+
+    p {
+        border: 1px solid black;
+         padding: 20px;
+    }
+
+    body {
+        background-image: url(generated-image.png);
+        background-size: cover;
+
+    }
+
+    input {
+        background-color: transparent;
+
+    }
+</style>
+
+<body>
+    <h2> Patient Info</h2>
+    <p><b> Name:</b> <input type=" text" placeholder="Enter patient name"> </p>
+    <p><b> Age:</b> <input type=" number" placeholder="Enter patient age"> </p>
+    <p>
+        <b>Gender:</b>
+        <label>
+            <input type="radio" value="male"> Male
+        </label>
+        <label>
+            <input type="radio" value="female"> Female
+        </label>
+    </p>
+
+    <p><b> Address:</b> <input type=" text" placeholder="Enter Address"> </p>
+    <p><b> Contact Number:</b> <input type=" tel" placeholder="Enter contact number"> </p>
+    <p><b> Email:</b> <input type=" email" placeholder="Enter email address"> </p>
+    <p><b>Blood Group: </b>
+        <select id="Blood Group" name="Blood Group">
+            <option value="" disabled selected>Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+    </p>
+    <p><b>Doctor name: </b> <input type="text" placeholder="doctor name"> </p>
+    <p><b> Medical History:</b>
+        <select id="Medical History" name="Medical History">
+            <option value="" disabled selected>Select Medical History</option>
+            <option value="Presenting Complaint">Presenting Complaint</option>
+            <option value="History of Present Illness">History of Present Illness</option>
+            <option value="Past Medical History">Past Medical History</option>
+            <option value="Past Surgical History">Past Surgical History</option>
+            <option value="Medications">Medications</option>
+            <option value="Allergies">Allergies</option>
+            <option value="Immunizations">Immunizations</option>
+            <option value="Family Historyt">Family History</option>
+            <option value="Social History">Social History</option>
+            <option value="Review of Systems">Review of Systems</option>
+        </select>
+    </p>
+    <p><b> Current Medications:</b> <input type=" text" placeholder="Enter current medications"> </p>
+    <p><b> Allergies:</b>
+        <select id="Allergies" name="Allergies">
+            <option value="" disabled selected>Select allergy</option>
+            <option value="food">Food</option>
+            <option value="drug">Drug</option>
+            <option value="insect">Insect</option>
+            <option value="pet">Pet</option>
+            <option value="pollen">Pollen</option>
+            <option value="dust">Dust</option>
+            <option value="mold">Mold</option>
+            <option value="skin_contact">Skin/contact</option>
+        </select>
+    </p>
+    <p><b> Emergency Contact:</b> <input type=" text" placeholder="Enter emergency contact"> </p>
+    <p>
+        <b>Patient Problem:</b>
+        <textarea name="patient_problem" placeholder="Describe the patient's problem"></textarea>
+    </p>
+
+
+    <a href="home.html"> Back to Home</a>
+
+
+</body>
+
+</html>
